@@ -95,10 +95,18 @@ main .container {
 .bold-span {
     font-weight: 700;
 }
+.bg-span {
+    background-color: #DADADA;
+    width: fit-content;
+    
+}
+.underline-span {
+    text-decoration: underline;
+}
 .info:not(:last-child) {
     margin-bottom: 40px;
 }
-/*1111*/
+
 
 
 
