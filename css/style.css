@@ -18,12 +18,12 @@
     justify-content: space-between;
 }
 
-.header .container nav {
+.header .container .pages {
     display: flex;
     flex-direction: row;
 }
 
-.header .container nav h2 {
+.pages h2 {
     font-family: 'Tourney', sans-serif;
     font-style: normal;
     text-transform: uppercase;
@@ -32,7 +32,7 @@
     margin-right: 50px;
 }
 
-.header .container nav a {
+.pages a, .pages span {
     font-family: 'Staatliches', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -40,11 +40,11 @@
     text-decoration: none;
 }
 
-.header .container nav a:not(:last-child) {
+.pages span {
     margin-right: 10px;
 }
 
-.header .container nav a:visited {
+.header .container .pages a:visited {
     color: #000000;
 }
 
@@ -61,7 +61,7 @@ main .container {
     max-width: 1200px;
     margin: 0 auto;
     color: #000000;
-    padding-bottom: 90px;
+    padding: 70px 5px;
 }
 
 .chapters {
@@ -129,6 +129,60 @@ main .container {
 
 .info:not(:last-child) {
     margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 992px) {
+    .header .container {
+        flex-direction: column-reverse;
+    }
+
+    .pages h2 {
+        margin-right: 25px;
+    }
+
+    .header .container .icon {
+        margin-bottom: 20px;
+    }
+
+    main {
+        padding: 30px 10px 40px;
+    }
+
+    main .container {
+        padding: 30px 5px;
+    }
+
+    .chapters li:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    
+    .chapters li .title {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .title h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    
+    .title p {
+        font-size: 16px;
+    }
+
+    .info, .core-concepts {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    .core-concepts li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .info:not(:last-child) {
+        margin-bottom: 20px;
+    }
 }
 
 
