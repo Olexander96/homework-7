@@ -11,39 +11,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <nav>
+            <menu class="pages">
                 <h2>Eng</h2>
-                <a href="#">Documentation</a>
-                <a href="#">/</a>
-                <a href="#">Who's using</a>
-            </nav>
+                <ul class="pages-list">
+                    <li>Documentation</li>
+                    <li>/</li>
+                    <li><a href="#">Who's using</a></li>
+                </ul>
+            </menu>
             <svg class="icon">
-                <use xlink:href="../img/sprite.svg#company-logo-black"></use>
+                <use xlink:href="img/sprite.svg#company-logo-black"></use>
             </svg>
         </div>
     </header>
     <main>
         <div class="container">
             <ul class="chapters">
-                <li class="first">
+                <li>
                     <div class="title">
                         <h2>Introduction</h2>
-                        <p class="title-p">Chapter 1</p>
+                        <p>Chapter 1</p>
                     </div>
                     <p class="info">Welcome to the very start of your React Native journey! If you're looking for environment
-                         setup instructions, they've moved to their own section. Continue reading for an introduction
+                         setup instructions, they've moved to <span class="underline-span">their own section</span>. Continue reading for an introduction
                           to the documentation, Native Components, React, and more!
                     </p>
                 </li>
-                <li class="second">
+                <li>
                     <div class="title">
                         <h2>core components</h2>
-                        <p class="title-p">Chapter 2</p>
+                        <p>Chapter 2</p>
                     </div>
                     <p class="info">React Native is an open source framework for building Android and iOS applications 
                         using React and the app platform’s native capabiles. With React Native, you use JavaScript to 
@@ -52,12 +54,12 @@
                         in the next section. But first, let’s cover how components work in React Native.
                     </p>
                 </li>
-                <li class="third">
+                <li>
                     <div class="title">
                         <h2>react fundamentals</h2>
-                        <p class="title-p">Chapter 3</p>
+                        <p>Chapter 3</p>
                     </div>
-                    <p class="info">React Native runs on React, a popular open source library for building user 
+                    <p class="info">React Native runs on <span class="underline-span">React,</span> a popular open source library for building user 
                         interfaces with JavaScript. To make the most of React Native, it helps to understand React 
                         itself. This section can get you started or can serve as a refresher course.
                     </p>
@@ -69,13 +71,14 @@
                         </li>
                         <li>
                             <span class="bold-span">+ JSX.</span> React and React Native use JSX, a syntax that lets 
-                            you write elements inside JavaScript like so: &ltText&gtHello, I am your cat!&lt/Text&gt.
+                            you write elements inside JavaScript like so: <span class="bg-span">&ltText&gtHello, I am your cat!&lt/Text&gt.</span>
                         </li>
-                        <li>
-                            The React docs have a comprehensive guide to JSX you can refer to learn even more. Because 
-                            JSX is JavaScript, you can use variables inside it. Here you are declaring a name for the cat, 
-                            name, and embedding it with curly braces inside &ltText&gt
-                        </li>
+                    </ul>
+                    <p class="info">The React docs have <span class="underline-span">a comprehensive guide to JSX</span> you can refer to learn even more. Because 
+                        JSX is JavaScript, you can use variables inside it. Here you are declaring a <span class="bg-span">name</span> for the cat, 
+                        name, and embedding it with curly braces inside <span class="bg-span">&ltText&gt</span>
+                    </p>
+                    <ul class="arguments">
                         <li>
                             <span class="bold-span">+ props.</span> Props is short for “properties”. 
                         </li>
@@ -86,13 +89,13 @@
                         </li>
                     </ul>
                 </li>
-                <li class="fourth">
+                <li>
                     <div class="title">
                         <h2>handling text input</h2>
-                        <p class="title-p">Chapter 4</p>
+                        <p>Chapter 4</p>
                     </div>
                     <p class="info">TextInput is a Core Component that allows the user to enter text. 
-                        It has an onChangeText prop that takes a function to be called every time the 
+                        It has an <span class="italic-span">onChangeText</span> prop that takes a function to be called every time the 
                         text changed, and an onSubmitEditing prop that takes a function to be called when 
                         the text is submitted.
                     </p>
