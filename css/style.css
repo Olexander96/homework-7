@@ -5,12 +5,12 @@
 }
 
 .header {
-    padding: 13px 0;
     min-height: 80px;
 }
 
 .header .container {
-    max-width: 1200px;
+    max-width: 1220px;
+    padding: 13px 10px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -21,6 +21,7 @@
 .header .container .pages {
     display: flex;
     flex-direction: row;
+    color: #000000;
 }
 
 .pages h2 {
@@ -32,19 +33,28 @@
     margin-right: 50px;
 }
 
-.pages a, .pages span {
+.pages-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.pages-list {
     font-family: 'Staatliches', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
-    text-decoration: none;
 }
 
-.pages span {
+.pages-list li:not(:last-child) {
     margin-right: 10px;
 }
 
-.header .container .pages a:visited {
+.pages-list a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pages-list a:visited {
     color: #000000;
 }
 
@@ -53,15 +63,11 @@
     height: 54px;
 }
 
-main {
-    padding: 70px 20px 90px;
-}
-
 main .container {
-    max-width: 1200px;
+    max-width: 1220px;
+    padding: 70px 10px 90px;
     margin: 0 auto;
     color: #000000;
-    padding: 70px 5px;
 }
 
 .chapters {
@@ -69,6 +75,7 @@ main .container {
     flex-direction: column;
     align-items: center;
 }
+
 .chapters li:not(:last-child) {
     margin-bottom: 70px;
 }
@@ -98,7 +105,7 @@ main .container {
     letter-spacing: 0.04em;
 }
 
-.info, .core-concepts {
+.info, .core-concepts, .arguments {
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -106,7 +113,15 @@ main .container {
     line-height: 48px;
 }
 
+.core-concepts {
+    margin-bottom: 40px;
+}
+
 .core-concepts li:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.arguments li:not(:last-child) {
     margin-bottom: 40px;
 }
 
@@ -136,20 +151,22 @@ main .container {
         flex-direction: column-reverse;
     }
 
+    .header .container .pages {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .pages h2 {
-        margin-right: 25px;
+        margin-right: 0px;
+        margin-bottom: 15px;
     }
 
     .header .container .icon {
         margin-bottom: 20px;
     }
 
-    main {
-        padding: 30px 10px 40px;
-    }
-
     main .container {
-        padding: 30px 5px;
+        padding: 30px 10px;
     }
 
     .chapters li:not(:last-child) {
@@ -171,12 +188,16 @@ main .container {
         font-size: 16px;
     }
 
-    .info, .core-concepts {
+    .info, .core-concepts, .arguments {
         font-size: 18px;
         line-height: 30px;
     }
     
     .core-concepts li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .arguments li:not(:last-child) {
         margin-bottom: 20px;
     }
 
